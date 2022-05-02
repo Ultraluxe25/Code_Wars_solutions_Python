@@ -9,7 +9,7 @@ def format_duration(seconds):
     minute = seconds % 3600 // 60  # seconds in a minute
     second = seconds % 60  # other seconds
 
-# here we set correct output for each time period
+    # here we set correct output for each time period
     # years
     if year > 1:
         years = f'{year} years,'
@@ -50,7 +50,7 @@ def format_duration(seconds):
     else:
         seconds = ''
 
-# here we unite time periods except last for correct output
+    # here we unite time periods except last for correct output
     present = []
     values = [year, day, hour, minute, second]
     time = [years, days, hours, minutes, seconds]
@@ -58,7 +58,7 @@ def format_duration(seconds):
         if period > 0:
             present.append(time[index])
 
-# here we solve problems with 'and' output
+    # here we solve problems with 'and' output
     time_interval = len(present)
     if time_interval > 1:
         time_interval_except_one = present[:time_interval - 1]
