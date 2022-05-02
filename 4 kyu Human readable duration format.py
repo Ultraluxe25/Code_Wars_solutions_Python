@@ -76,5 +76,5 @@ number = int(input())
 print(format_duration(number))
 
 
-# My solution path
+# My solution
 # https://www.codewars.com/kata/52742f58faf5485cae000b9a/solutions/python/me/best_practice
